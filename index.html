@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="results.html" method="GET">
+        <div>
+            <label for="name" >Name</label>
+            <input type="text" name='name' id="name" placeholder="username" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+         <label for="password">Password</label>
+            <input type="password" name='password' id="password">
+         </div>
+         <div>
+             <label for="favnum">Favorite Number</label>
+             <input type="number" name='favnum' id="favnum">
+         </div>
+         <div>
+             <label for="date">Birthdate</label>
+             <input type="date" name="bday" id="bday">
+         </div>
+         <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
