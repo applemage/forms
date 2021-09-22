@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Forms</title>
 </head>
 <body>
-    <form action="results.html" method="GET">
+    <header>
+        <h1>Form example sheet</h1>
+    </header>
+    <main>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
         <div>
             <label for="name" >Name</label>
             <input type="text" name='name' id="name" placeholder="username" required>
+        </div>
+        <div>
+            <label for="favnum">Favorite Number</label>
+            <input type="number" name='favnum' id="favnum">
         </div>
         <div>
             <label for="email">Email</label>
@@ -18,18 +27,77 @@
         </div>
         <div>
          <label for="password">Password</label>
-            <input type="password" name='password' id="password">
-         </div>
-         <div>
-             <label for="favnum">Favorite Number</label>
-             <input type="number" name='favnum' id="favnum">
-         </div>
+            <input type="password" name='password' id="password" required>
+        </div>
          <div>
              <label for="date">Birthdate</label>
              <input type="date" name="bday" id="bday">
+         </div> 
+         <div>
+             <label for="phone">Phone</label>
+             <input type="tel" id="phone" name="phone">
+         </div>
+         <div>
+             <label for="url">Url</label>
+             <input type="url" name="url" name="url">
+         </div>
+         <div>
+             <label for="color">Color</label>
+             <input type="color" name="color" id="color">
+         </div>
+         <div>
+          Animals owned
+          <div>
+              <label for="poultry">Poultry</label>
+              <input type="checkbox" name="poultry" id="poultry">
+          </div>   
+          <div>
+              <label for="dog">Dog</label>
+              <input type="checkbox" name="dog" id="dog">
+          </div>
+          <div>
+              <label for="cat">Cat</label>
+              <input type="checkbox" name="cat" id="cat">
+          </div>
+          <div>
+              <label for="cattle">Cow</label>
+              <input type="checkbox" name="cattle" id="cattle">
+          </div>
+         </div>
+         <div>My home is:
+             <div>
+                 <label for="owned">Owned</label>
+                 <input type="radio" name="home" id="owned" value="owned">
+             </div>
+             <div>
+                 <label for="rented">Rented</label>
+                 <input type="radio" name="home" id="rented" value="rented">
+             </div>
+         </div>
+         <div>Favorite season of the Year:
+             <select name="season" id="season">
+                 <option value="Spring">Spring</option>
+                 <option value="Summer" label="Summer">Summer</option>
+                 <option value="Autumn" label="Autumn">Autumn</option>
+                 <option value="Winter" label="Winter">Winter</option>
+             </select>
+         </div>
+         <div>
+             <label for="bio">Bio</label>
+             <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+         </div>
+         <input type="hidden" name="hidden" value="hello">
+         <div>
+             <label for="file">File</label>
+             <input type="file" id="file" name="file">
          </div>
          <button type="reset">Reset</button>
         <button type="submit">Submit</button>
     </form>
+</main>
+<aside>
+    <h2>This section for addition info</h2>
+</aside>
+<footer>&copy 2021</footer>
 </body>
 </html>

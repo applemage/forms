@@ -1,0 +1,21 @@
+header{
+    margin: 20px;
+    padding: auto;
+    background-color: blue;
+    color: cornsilk;
+    
+}
+main{
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid green;
+}
+aside{
+    border: 5px dotted yellow
+}
+footer{background-color: teal;
+}
+#name{
+    background-color: tomato;
+    color: purple;
+}
