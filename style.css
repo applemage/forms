@@ -15,6 +15,14 @@ aside{
 }
 footer{background-color: teal;
 }
+.grid-container{
+    border: 1px solid red;
+}
+.flex-container{
+    border: 1px dotted black;
+    margin: 10px;
+    background-color: chartreuse;
+}
 #name{
     background-color: tomato;
     color: purple;
